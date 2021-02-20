@@ -6,6 +6,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --icon-color: #afb1b8;
+  --hero-gradient: rgba(47, 48, 58, 0.4);
 
   --outline-border: #eeeeee;
 
@@ -201,9 +202,18 @@ img {
   justify-content: center;
   min-height: 600px;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-color: var(--black-bg-color);
-
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   letter-spacing: 0.06em;
 }

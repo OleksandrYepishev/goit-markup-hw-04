@@ -5,6 +5,7 @@
   --accent: #2196f3;
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --social-color: #afb1b8;
 
   --outline-border: #eeeeee;
 
@@ -271,6 +272,16 @@ img {
   margin-right: var(--set-gap);
 }
 
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color);
+}
+
 .features h3 {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -344,9 +355,13 @@ img {
   text-align: center;
 }
 
+.team .title {
+  margin-bottom: 10px;
+}
+
 .team .text {
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 16;
 
   font-size: 16px;
   line-height: 1.19;
@@ -361,6 +376,38 @@ img {
 .team-card {
   box-shadow: var(--shadow);
   border-radius: 4px;
+}
+
+.social.icons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+  padding: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-color);
+}
+
+.social .link:hover {
+  background-color: var(--accent);
+  color: var(--primary-white-color);
+}
+
+.social .icon {
+  fill: currentColor;
 }
 
 /* футер */

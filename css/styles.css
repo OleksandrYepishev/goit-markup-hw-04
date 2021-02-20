@@ -166,6 +166,9 @@ img {
 
 .site-contacts .link {
   color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-contacts .link:hover,
@@ -175,6 +178,11 @@ img {
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-contacts .icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .site-contacts > .item {
@@ -322,7 +330,7 @@ img {
 }
 
 /* секция наша команда */
-team {
+.team {
   background-color: var(--secondary-bg-color);
 }
 
@@ -401,7 +409,8 @@ team {
   color: var(--social-color);
 }
 
-.social .link:hover {
+.social .link:hover,
+.social .link:focus {
   background-color: var(--accent);
   color: var(--primary-white-color);
 }
@@ -460,6 +469,8 @@ team {
 
 .footer-page > .container {
   max-width: 1600px;
+  display: flex;
+  align-items: baseline;
 }
 
 .logo.footer {
@@ -489,6 +500,41 @@ team {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent);
+}
+
+.footer .social .link {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social .link:hover,
+.social .link:focus {
+  background-color: var(--accent);
+}
+
+.footer > .social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.footer .social.icons {
+  margin: 0;
+  justify-content: space-between;
+}
+
+.join {
+  justify-content: center;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
 }
 
 /* Страница Портфолио  */

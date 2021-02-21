@@ -399,6 +399,7 @@ img {
 .team-card {
   box-shadow: var(--main-card-shadow);
   border-radius: 4px;
+  background-color: var(--primary-white-color);
 }
 
 .social.icons {
@@ -421,7 +422,11 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--social-color);
+  color: var(--icon-color);
+}
+
+.social li:not(:nth-last-of-type(1)) {
+  margin-right: 10px;
 }
 
 .social .link:hover,
